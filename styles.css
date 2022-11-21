@@ -17,10 +17,11 @@ body {
     align-items: center;
     background: #38ccae;
     background: linear-gradient(to right top, var(--dark), var(--green));
+    overflow: hidden;
 }
 
 .container {
-    width: 66%;
+    width: 56%;
     height: 66%;
     background: rgba(0, 0, 0, 0.75);
     background: linear-gradient(to right top, rgba(0, 0, 0, 0.75), rgba(0, 0, 0, 0.25));
@@ -32,4 +33,37 @@ body {
 
 .bg__img {
     position: absolute;
+    
+}
+
+.bg__img--button {
+    top: 0;
+    right: 60%;
+    height: 30vh;
+    animation: slideDown 12s linear infinite;
+}
+
+.bg__img--dots {
+    top: 0;
+    left: 50%;
+    height: 75vh;
+    animation: rotate 25s linear infinite;
+}
+
+.bg__img--logo {
+    left: 0;
+    top: 50%;
+    width: 50%;
+    opacity: 0.25;
+    transform: translate(-50%, -50%);
+}
+
+@keyframes slideDown {
+    from {transform: translateY(-30vh)}
+    to {transform: translateY(100vh);}
+}
+
+@keyframes rotate {
+    from {transform: rotate(0deg);}
+    to {transform: rotate(360deg);}
 }
