@@ -1,0 +1,17 @@
+:root {
+    --green: #38ccae;
+    --dark: #1b1b1b;
+}
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    width: 100vw; //viewportwidth
+    height: 100vh;
+    background: #38ccae;
+    background: linear-gradient(to right top, var(--dark), var(--green));
+}
