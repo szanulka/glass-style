@@ -97,11 +97,11 @@ a:after {
 	top: 100%;
 	left: 0;
 	background: var(--green);
-	background: linear-gradient(95deg, transparent, var(--green));
+	background: linear-gradient(90deg, transparent, var(--green));
 	transition: width 0.3s;
 }
 
-a:hover:after {
+a:hover{
 	width: 100%;
 }
 
