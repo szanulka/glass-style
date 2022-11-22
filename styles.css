@@ -101,7 +101,7 @@ a:after {
 	transition: width 0.3s;
 }
 
-a:hover{
+a:hover:after{
 	width: 100%;
 }
 
